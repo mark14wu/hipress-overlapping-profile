@@ -1,0 +1,20 @@
+INFO:root:Epoch[0] Batch[20]	Speed: 39.71 samples/sec
+INFO:root:step time: 805.80 ms
+INFO:root:Epoch[0] Batch[40]	Speed: 99.02 samples/sec
+INFO:root:step time: 323.16 ms
+INFO:root:Epoch[0] Batch[60]	Speed: 97.79 samples/sec
+INFO:root:step time: 327.23 ms
+INFO:root:Epoch[0] Batch[80]	Speed: 98.64 samples/sec
+INFO:root:step time: 324.40 ms
+INFO:root:Epoch[0] Batch[100]	Speed: 98.35 samples/sec
+INFO:root:step time: 325.36 ms
+INFO:root:Epoch[0] Batch[120]	Speed: 100.19 samples/sec
+INFO:root:step time: 319.39 ms
+INFO:root:Epoch[0] Batch[140]	Speed: 99.62 samples/sec
+INFO:root:step time: 321.21 ms
+INFO:root:Epoch[0] Batch[160]	Speed: 98.92 samples/sec
+INFO:root:step time: 323.49 ms
+INFO:root:Epoch[0] Batch[180]	Speed: 99.36 samples/sec
+INFO:root:step time: 322.07 ms
+INFO:root:Epoch[0] Batch[200]	Speed: 100.38 samples/sec
+INFO:root:step time: 318.80 ms

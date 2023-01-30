@@ -1,0 +1,4 @@
+hipress_2n2c_rank1.json filter=lfs diff=lfs merge=lfs -text
+hipress_2n2c_rank64.json filter=lfs diff=lfs merge=lfs -text
+torchddp_2n2c_rank1.json filter=lfs diff=lfs merge=lfs -text
+torchddp_2n2c_rank64.json filter=lfs diff=lfs merge=lfs -text
