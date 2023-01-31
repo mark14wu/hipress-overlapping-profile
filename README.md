@@ -14,7 +14,7 @@ As we can see in section "python 0", Stream 7 is for DNN computation (forward an
 
 The overlapping is enabled by our task manager we implemented in HiPress.
 
-Due to the overlapping, our training step time in this case is 273.55ms in average. The training log of step time can be found in `step_time/hipress_2n2c_rank64.txt`.
+Due to the overlapping, our training step time in this case is **273.55ms** in average. The training log of step time can be found in `step_time/hipress_2n2c_rank64.txt`.
 
 You can reproduce the profiling file by running the script in `scripts/hipress/run_2n2c_rank64_profile.sh`, and the step time by running `scripts/hipress/run_2n2c_rank64.sh`. You should adjust the ip address according to your cluster and put `hipress_powersgd_vgg.py` in the right directory (/workspace in my case) before using the script.
 
@@ -24,7 +24,7 @@ The following screenshot shows the profiling results of TorchDDP with PowerSGD(r
 
 ![torchddp_2n2c_rank64](profiling_screenshots/torchddp_2n2c_rank64.png)
 
-Stream 7 is for DNN computation, Stream 16 is for gradient communication, Stream 20, 24, 28, 32, 36,40, 44, 48, 52, 56, 60, 64, 68, 72, 76 are for gradient compression. These streams are not overlapped, causing a great increase in training step time, which is 794.01ms in average. The training log of step time can be found in `step_time/torchddp_2n2c_rank64.txt`.
+Stream 7 is for DNN computation, Stream 16 is for gradient communication, Stream 20, 24, 28, 32, 36,40, 44, 48, 52, 56, 60, 64, 68, 72, 76 are for gradient compression. These streams are not overlapped, causing a great increase in training step time, which is **794.01ms** in average. The training log of step time can be found in `step_time/torchddp_2n2c_rank64.txt`.
 
 Since TorchDDP implemented gradient compression in hook and it lacked dependency tracking ability, gradient communication and gradient compression, as well as DNN computation, cannot overlap.
 
